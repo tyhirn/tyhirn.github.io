@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>My Personal Website</title>
-	<!-- Add CSS styles -->
-	<link rel="stylesheet" type="text/css" href="index.css" />
-	<!-- Add JavaScript files -->
-	<script src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Name - Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
+
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Experience</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<section>
-			<h1>Welcome to my personal website</h1>
-			<p>This is a place where I showcase my personal projects, experience, and education.</p>
-		</section>
-		
-		<section>
-			<h2>Projects</h2>
-			<ul>
-				<li>
-					<h3>Project 1</h3>
-					<p>Description of project 1.</p>
-					<p><a href="#">View project</a></p>
-				</li>
-				<li>
-					<h3>Project 2</h3>
-					<p>Description of project 2.</p>
-					<p><a href="#">View project</a></p>
-				</li>
-			</ul>
-		</section>
-		
-		<section>
-			<h2>Experience</h2>
-			<ul>
-				<li>
-					<h3>Job title 1</h3>
-					<p>Company name</p>
-					<p>Duration: Start date - End date</p>
-					<ul>
-						<li>Responsibility 1</li>
-						<li>Responsibility 2</li>
-					</ul>
-				</li>
-				<li>
-					<h3>Job title 2</h3>
-					<p>Company name</p>
-					<p>Duration: Start date - End date</p>
-					<ul>
-						<li>Responsibility 1</li>
-						<li>Responsibility 2</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		
-		<section>
-			<h2>Education</h2>
-			<ul>
-				<li>
-					<h3>Degree 1</h3>
-					<p>University name</p>
-					<p>Duration: Start date - End date</p>
-					<p>GPA: 3.5</p>
-				</li>
-				<li>
-					<h3>Degree 2</h3>
-					<p>University name</p>
-					<p>Duration: Start date - End date</p>
-					<p>GPA: 3.8</p>
-				</li>
-			</ul>
-		</section>
-	</main>
-	
-	<footer>
-		<p>Copyright &copy; My Personal Website
-	</footer>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Your Name</a>
+        <div class="nav__menu">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title">Hi, I'm Your Name</h1>
+        <p class="hero__subtitle">I'm a Software Engineer</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section__container container">
+        <h2 class="section__title">About Me</h2>
+        <div class="section__content">
+          <p>[placeholder]</p>
+
+          <p>[placeholder]</p>
+
+          <p>[placeholder]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alternate">
+      <div class="section__container container">
+        <h2 class="section__title">Skills</h2>
+        <div class="section__content">
+          <ul class="skills">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__container container">
+        <h2 class="section__title">Work</h2>
+        <div class="section__content">
+          <ul class="work">
+            <li>
+              <h3>Project 1</h3>
+              <p>[placeholder]</p>
+            </li>
+            <li>
+              <h3>Project 2</h3>
+              <p>[placeholder]</p>
+            </li>
+            <li>
+              <h3>Project 3</h3>
+              <p>[placeholder]</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alternate">
+      <div class="section__container container">
+        <h2 class="section__title">Contact Me</h2>
+	      <div class="section__content">
+  <form class="contact-form" action="#" method="post">
+    <div class="contact-form__group">
+      <label for="name" class="contact-form__label">Name</label>
+      <input type="text" id="name" name="name" class="contact-form__input" required>
+    </div>
+    <div class="contact-form__group">
+      <label for="email" class="contact-form__label">Email</label>
+      <input type="email" id="email" name="email" class="contact-form__input" required>
+    </div>
+    <div class="contact-form__group">
+      <label for="message" class="contact-form__label">Message</label>
+      <textarea id="message" name="message" class="contact-form__textarea" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send</button>
+  </form>
+</div>
+</div>
+</section>
+<footer class="footer">
+  <div class="footer__container container">
+    <p>&copy; Your Name</p>
+  </div>
+</footer>
+
+<!-- Add JavaScript files -->
+<script src="index.js"></script>
 </body>
 </html>
+
+       
+
