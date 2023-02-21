@@ -248,3 +248,27 @@ letter-spacing: 0.1em;
 display: flex;
 }
 }
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.social-icons i {
+  font-size: 2rem;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+  color: #0077b5; /* LinkedIn */
+  cursor: pointer;
+}
+
