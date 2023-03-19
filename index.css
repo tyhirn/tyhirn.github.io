@@ -253,6 +253,24 @@ a {
   cursor: pointer;
 }
 
+.emailBarText {
+  color: black;
+  margin-top: 20px;
+  margin-right: auto;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  top: 44%;
+  right: 1%;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+}
+
+.emailBarText:hover {
+  color: #0077b5;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
@@ -299,4 +317,3 @@ a {
     display: flex;
   }
 }
-
