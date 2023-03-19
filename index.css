@@ -91,10 +91,55 @@ a {
   }
 }
 
+/* BEGIN SECTION DYNAMICBACKGROUND */
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #E09F3E 50%, #9E2A2B 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.hero__container {
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  padding: 10vmin;
+  /* position: fixed; */
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* END SECTION DYNAMICBACKGROUND */
+
 /* Hero */
 .hero {
-  height: calc(100vh - 4rem);
-  background-image: url('https://via.placeholder.com/1600x900');
+  height: calc(100vh - 0rem);
+  /* In case I want to shorten depending on screen */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -118,6 +163,7 @@ a {
 /* Sections */
 .section {
   padding: 6rem 0;
+  color: #F3F7F0;
 }
 
 .section__title {
@@ -133,6 +179,12 @@ a {
 
 .section--alternate {
   background-color: #f5f5f5;
+  padding: 6rem 0
+}
+
+.section--alternate2 {
+  background-color: #fff;
+  padding: 6rem 0
 }
 
 .skills,
@@ -162,97 +214,25 @@ a {
 
 /* Footer */
 .footer {
-background-color: #333;
-color: #fff;
-padding: 3rem 0;
+  /* background-color: #474545; */
+  color: #F3F7F0;
+  opacity: .8;
+  height: 4rem;
+
 }
 
-.footer__logo {
-font-size: 1.5rem;
-font-weight: 700;
-margin-bottom: 1rem;
-}
-
-.footer__menu {
-display: flex;
-justify-content: center;
-}
-
-.footer__menu li {
-margin: 0 1.5rem;
-}
-
-.footer__menu a {
-font-size: 0.875rem;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-color: inherit;
-opacity: 0.7;
-}
-
-.footer__menu a:hover {
-opacity: 1;
-}
-
-.footer__copy {
-font-size: 0.875rem;
-opacity: 0.7;
-text-align: center;
-margin-top: 2rem;
-}
-
-@media (max-width: 767px) {
-.container {
-max-width: 100%;
-padding: 0 2rem;
-}
-
-.nav__menu {
-position: fixed;
-top: 4rem;
-left: 0;
-width: 100%;
-height: calc(100vh - 4rem);
-background-color: #fff;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-z-index: 998;
-transform: translateY(-100%);
-transition: transform 0.3s ease;
-}
-
-.nav__menu.active {
-transform: translateY(0);
-}
-
-.nav__menu ul {
-flex-direction: column;
-align-items: center;
-}
-
-.nav__menu li {
-margin: 1rem 0;
-}
-
-.nav__menu a {
-font-size: 1.5rem;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-}
-
-.nav__toggle {
-display: flex;
-}
+.creditFooter {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .social-icons {
   position: fixed;
-  top: 50%;
-  left: 0;
+  top: 53%;
+  left: 1%;
   transform: translateY(-50%);
 }
 
@@ -268,7 +248,55 @@ display: flex;
 }
 
 .social-icons i:hover {
-  color: #0077b5; /* LinkedIn */
+  color: #0077b5;
+  /* LinkedIn */
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav__menu.active {
+    transform: translateY(0);
+  }
+
+  .nav__menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__menu li {
+    margin: 1rem 0;
+  }
+
+  .nav__menu a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
 }
 

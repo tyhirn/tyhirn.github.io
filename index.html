@@ -32,44 +32,39 @@
       </nav>
     </div>
   </header>
-  <!-- Floating bar containing icons for all my social media -->
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/tylerhirn/"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/tyhirn"><i class="fab fa-github"></i></a>
-  </div>
 
   <main class="main">
     <section id="hero" class="hero">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
       <div class="hero__container container">
         <h1 class="hero__title">Hi, my name is Tyler Hirn</h1>
         <p class="hero__subtitle">I build things that enrich peoples lives.</p>
-        <a href="#About" class="btn">A Software Engineer with a double degree in Psychology specialized in
-          designing and building user experience for the web, ios, and android platforms. Currently focusing
-          on bridging the gap between Psychology and Technology by developing a App that uses SVC, NLP, and
-          NN Machine learning models to predict users mood and provide personalized music recommendations.</a>
-        <!-- Box button to check out my app -->
-        <a href="#App" class="btn">Check out my app!</a>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section--alternate">
       <div class="section__container container">
         <h2 class="section__title">01. About Me</h2>
         <div class="section__content">
-          <p>Hello! My name is Tyler Hirn and I enjoy personalizing content. My love for technology started as a
-            kid playing pinball on my family laptop. As it turns out Psychology also turned out to be a passion
-            for me sparking a journey of creating solutions to link humans and technology. Fast forward to today
-            and I have had the privilege to develop an app to polish my skills in machine learning, user design
-            and engagement as well as data analysis.</p>
-
+          <p>A Software Engineer with a double degree in Psychology specialized in
+            designing and building user experience for the web, ios, and android platforms. Currently focusing
+            on bridging the gap between Psychology and Technology by developing a App that uses SVC, NLP, and
+            NN Machine learning models to predict users mood and provide personalized music recommendations.</p>
+          <a href="#App" class="btn">Check out my app!</a>
+          <!-- <p>Hello! My name is Tyler Hirn and I enjoy personalizing content. My love for technology started as a
+            kid playing pinball on my family laptop, and turned into my personal journey of creating solutions to link
+            humans and technology. Fast forward to today and I have had the privilege to develop an app to polish my
+            skills in machine learning, user design and engagement as well as data analysis.</p>
           <p>My focus includes learning the intricacies of machine
-            learning and understanding the human component that most machine learning models try to impersonate.</p>
+            learning and understanding the human component that most machine learning models try to impersonate.</p> -->
 
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section section--alternate">
+    <section id="skills" class="section--alternate2">
       <div class="section__container container">
         <h2 class="section__title">02. Skills</h2>
         <div class="section__content">
@@ -87,7 +82,7 @@
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="work" class="section--alternate">
       <div class="section__container container">
         <h2 class="section__title">02. Were I've Worked</h2>
         <div class="section__content">
@@ -143,7 +138,7 @@
       </div>
     </section>
 
-    <section id="skills" class="section section--alternate">
+    <section id="skills" class="section--alternate2">
       <div class="section__container container">
         <h2 class="section__title">03. Some things I've built.</h2>
 
@@ -165,9 +160,9 @@
                     <li>Neural Networks</li>
                   </ul>
                   <div class="projectLinks">
-                    <a href="https://github.com/tyhirn/Core" target="_blank"></a>
-                    <a href="https://github.com/tyhirn/CoreDataProcessing" target="_blank"></a>
-
+                    <a href="https://github.com/tyhirn/Core" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/tyhirn/CoreDataProcessing" target="_blank"><i
+                        class="fab fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -176,34 +171,46 @@
           </li>
         </ul>
 
-        <ul class="featured__StyledProjectsGrid">
+        <!-- <ul class="featured__StyledProjectsGrid">
           <li class="featured_project">
             <div class="projectContent"></div>
             <div class="projectImage"></div>
           </li>
-        </ul>
+        </ul> -->
 
       </div>
     </section>
 
-    <section id="contact" class="section section--alternate">
+    <section id="contact" class="section">
       <div class="section__container container">
-        <h2 class="section__title">Contact Me</h2>
+        <h2 class="section__title">04. What's Next?</h2>
+        <h2 class="title">Get In Touch</h2>
+        <p>
+          Currently I am looking for opportunities that benefit human wellbeing, especially those
+          related to machine learning, Psychology, and data analytics. Whether you just want to say hi,
+          or have a question or collaboration, I will always try my best to get back to you!
+        </p>
+        <a class="emailLink" href="mailto:tylerrhirn@gmail.com" target="_blank">Say Hello</a>
         <div class="section__content">
           <!-- Display my email, linkedin in a professional way -->
-
         </div>
       </div>
     </section>
     <footer class="footer">
+      <!-- Floating bar containing icons for all my social media -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/tylerhirn/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/tyhirn"><i class="fab fa-github"></i></a>
+      </div>
       <div class="footer__container container">
-        <p>&copy; Your Name</p>
+        <a class="creditFooter" href="https://github.com/tyhirn/tyhirn.github.io" target="_blank">
+          Designed and Developed by Tyler Hirn
+        </a>
       </div>
     </footer>
 
     <!-- Add JavaScript files -->
     <script src="index.js"></script>
-    // https://fontawesome.com/
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 
 </body>
