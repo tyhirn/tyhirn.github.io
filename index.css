@@ -317,3 +317,30 @@ a {
     display: flex;
   }
 }
+
+.jobs__StyledTabButtons {
+  display: flex;
+}
+
+
+.jobs__StyledTabButtons button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.jobs__StyledTabButtons button.active {
+  background-color: #ddd;
+}
+
+.jobs__StyledTabPanels .jobs__StyledTabPanel {
+  display: none;
+}
+
+.jobs__StyledTabPanels .jobs__StyledTabPanel.active {
+  display: block;
+}
