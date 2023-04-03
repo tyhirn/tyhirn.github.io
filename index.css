@@ -218,6 +218,7 @@ a {
   color: #F3F7F0;
   opacity: .8;
   height: 4rem;
+  margin-top: 20rem;
 
 }
 
@@ -318,6 +319,25 @@ a {
   }
 }
 
+.emailLinkBtn {
+  color: white;
+  border: white solid 2px;
+  border-radius: 5%;
+  left: 45%;
+  margin-top: 2em;
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.emailLinkBtn:hover {
+  color: #0077b5;
+  border: #0077b5 solid 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 .jobs__StyledTabButtons {
   display: flex;
 }
@@ -343,4 +363,31 @@ a {
 
 .jobs__StyledTabPanels .jobs__StyledTabPanel.active {
   display: block;
+}
+
+.projectScreenshots {
+  display: flex;
+  justify-content: center;
+}
+
+.appScreenshot {
+  margin: 10px;
+  width: 30%;
+  height: auto;
+}
+
+.appIcon {
+  width: 15%;
+  margin: 10px;
+  height: auto;
+}
+
+.projectHeading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title{
+  margin-left: 4rem;
 }
