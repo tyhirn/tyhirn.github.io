@@ -331,6 +331,7 @@ a {
   padding: 10px 20px;
   font-size: 18px;
 }
+
 .emailLinkBtn:hover {
   color: #0077b5;
   border: #0077b5 solid 2px;
@@ -382,12 +383,27 @@ a {
   height: auto;
 }
 
-.projectHeading{
+.projectHeading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.project-title{
+.project-title {
   margin-left: 4rem;
+}
+
+.profilePicture {
+  width: 40%;
+}
+
+.bioText {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
