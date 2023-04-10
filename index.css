@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -406,4 +407,38 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.jRow {
+  display: flex;
+}
+
+.jobsTabButtons{
+  display: block;
+  width: 25%;
+  margin-right: 10%;
+  margin-top: 4rem;
+  height: 100%;
+}
+
+.jobsTabPanels{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.jobsTab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem .5rem;
+  width: 100%;
+  margin-right: 1rem;
+  border: none;
+  background-color: inherit;
+}
+
+.tabActive{
+  border-left: 4px solid #0077b5;
 }
