@@ -38,6 +38,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-openTab(event, 'tab1');
+document.getElementById("tabLink1").click();
+
 
 
