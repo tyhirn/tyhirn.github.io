@@ -394,7 +394,7 @@ a {
   display: flex;
 }
 
-.jobs__StyledTabButtons{
+.jobs__StyledTabButtons {
   display: block;
   width: 25%;
   margin-right: 10%;
@@ -402,14 +402,14 @@ a {
   height: 100%;
 }
 
-.jobs__StyledTabPanels{
+.jobs__StyledTabPanels {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 65%;
 }
 
-.tablink{
+.tablink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,12 +420,12 @@ a {
   background-color: inherit;
 }
 
-.tablink:hover{
+.tablink:hover {
   background-color: #ddd;
   cursor: pointer;
 }
 
-.active{
+.active {
   border-left: 4px solid #0077b5;
 }
 
@@ -437,9 +437,29 @@ a {
   padding-left: 0;
 }
 
-.projSkills li{
+.projSkills li {
   font-size: 14px;
   border: 1px solid #e0e0e0;
   padding: .5rem;
   background-color: #f5f5f5;
+}
+
+.project-link{
+  color: blue;
+  font-size: 16px;
+}
+
+.tableauPlaceholder {
+  /* Center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Center vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Optionally, set a fixed width and height or adjust as needed */
+  width: 80%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
 }
